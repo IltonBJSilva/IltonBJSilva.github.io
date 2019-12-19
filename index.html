@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="app">
-<head>
-  <!-- Site made with Mobirise Website Builder v4.9.3, https://mobirise.com -->
+<html>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controle.js"></script>
+ 
 
-  <meta name="description" content="">
-  <title>Home</title>
-
-    <script scr="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-  
-  
-  
-</head>
-<body ng-controller="controle">
-
-  <h1>{{nome}}</h1>
-  
+<body>
+  <div ng-app="aplicacao" ng-controller="controle">
+    {{nome}}
+  </div>
 </body>
+
 </html>

@@ -1,3 +1,3 @@
-app.controller("controle", function($scope){
+app.controller("controle", function ($scope) {
     $scope.nome = "Ilton";
 });
