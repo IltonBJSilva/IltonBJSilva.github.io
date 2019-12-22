@@ -25,6 +25,23 @@ img#perfil{
       position: relative;
     }
 
+    #home {
+      padding-top: 50px;
+      height: 987px;
+      color: #fff;
+      background-color: rgb(255, 208, 0);
+      background-image: url('photo/homeilton.jpg');
+      
+    }
+
+    #iltonFoto{
+      width: 40%;
+      height: 40%;
+      margin-top: 10%;
+      margin-left: 60%;
+
+    }
+
     #section1 {
       padding-top: 50px;
       height: 500px;
@@ -64,6 +81,8 @@ img#perfil{
 #Contato{
     display: inline;
 }
-    
 
- 
+#container{
+  float: left;
+}
+
