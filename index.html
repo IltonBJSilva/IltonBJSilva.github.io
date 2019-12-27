@@ -1,43 +1,461 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <script src="angular.min.js"></script>
-  <script src="app.js"></script>
-  <script src="controle.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
- 
+<html lang="en">
 
-<body>
-  <div ng-app="aplicacao" ng-controller="controle">
-    <div class="jumbotron text-center">
-      <h1>Ilton Batista da Silva Júnior</h1>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ilton Batista</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Ilton Batista</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ilton.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experiência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Formação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Portfólio</a>
+        </li>
+      </ul>
     </div>
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4" class="mx-auto" style="width: 200px;">
-          <h3>Pessoal</h3>
-          <p></p>
-          <p></p>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Ilton
+          <span class="text-primary">Batista</span>
+        </h1>
+        <div class="subheading mb-5">+55 (34) 9 996708213
+          <a href="mailto:name@email.com">iltonbatista2018@email.com</a>
         </div>
-        <div class="col-sm-4">
-          <h3>Profissional</h3>
-          <p></p>
-          <p></p>
+        <p class="lead mb-5">
+          Eu sei desenvolver um sistema fullstack usando tecnologia Java-web.
+          <br>
+          Tenho habiliades em criação de copy sendo um Copywriter.
+          <br>
+          Sou um youtuber dono do canal 
+          <a href="https://www.youtube.com/user/MineDutyPlayer123" target="_blank">
+            Guleskate
+          </a> 
+          e do canal 
+          <a href="https://www.youtube.com/user/MusicRapTributoOtaku  " target="_blank">
+            Kougatia
+          </a>
+          <br> 
+          sendo um de vlog mais de entretenimento e outro de negócios 
+          respectivamente e dono também do website
+          <a href="https://iltonbatista2018.wixsite.com/kougatia" target="_blank">
+            Kougatia</a>. 
+        </p>
+        <p class="lead mb-5"></p>      
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ilton-batista-4373b9b9/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/IltonBJSilva" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/IltonBJ1" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/ilton.junior.186" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/ilton_batista_da_silva/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCZS0bIL5G_vDmevFIBHd41g?view_as=subscriber" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://iltonbatista2018.wixsite.com/kougatia" target="_blank">
+            <i class="fab fa-korvue"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experiência</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Desenvolvedor</h3>
+            <div class="subheading mb-3">Começo como desenvolvedor</div>
+            <p>
+              Comecei realmente a aprender a como desenvolver e a pegar as técnicas de desenvolvimento esse
+              ano quando fui aprendendo as coisas mais pesadas da programação e as técnicas de como desenvolver
+              um bom código seguindo uma boa prática para deixar mais legível e mais fácil para um futuro
+              desenvolvedor.
+            </p>
+
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2019 - Dias atuais</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Aprendizagem em desenvolvimento de software</h3>
+            <div class="subheading mb-3">Inicio da minha vida profissional como desenvolvedor</div>
+            <p>
+              Tive inicio da minha vida profissional em no final de 2018 como desenvovledor aprendiz
+              no inicio meus planos era so fazer a entrevista, nessa mesma epoca estava terminando
+              o curso de eletromecanica do SENAI, quando percebi que tinha conseguido a vaga fiz uma 
+              dificil escolha, comecei a fazer SENAI de manhã, trabalhar a tarde, e ir pra escola a noite
+              quando terminou o SENAI retornei estudar de manhã e continuei trabalhando a tarde como 
+              aprendiz e realizo curso de auxiliar administrativo.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Setembro 2018 - Janeiro 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Eletromecânico</h3>
+            <div class="subheading mb-3">Curso e prática que tive dentro do SENAI</div>
+            <p>
+              No período de 1 ano realizei diversas atividades no curso de aprendizagem
+              industrial em eletromecânica do SENAI no qual desenvolveu muito de minhas capacidades
+              de trabalhos manuais, de paciência e principalmente de pensamento critico e logico que
+              ajudou a consegui uma vaga de aprendiz um pouco antes do final de 2018.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2018 - Dezembro 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Aluno - Uberhub code club</h3>
+            <div class="subheading mb-3">Introdução ao meio da programação focado em maratona</div>
+            <p>
+              Inicio como aluno de algoritmo e linguagem de programação comecei aprender
+              algoritmo um pouco antes usando <a href="https://scratch.mit.edu/">Scratch</a>
+              e <a href="https://studio.code.org/s/mc/stage/1/puzzle/1">hora do código</a>,
+              quando iniciei no uberhub aprendi a linguagem <b>C</b>e em seguida 
+              depois passei para o <b>C++</b>.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2016 - Setembro 2018</span>
+          </div>
+        </div>
+        
+        <br><br>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Yotuber</h3>
+            <div class="subheading mb-3">Inicio como youtuber</div>
+            <p>
+              Iniciei como youtuber em 2009 com a vontade de passar um conteúdo
+              divertido e inspirado pelo canal "coisa de nerd" iniciei a gravar
+              gameplay, hoje já tenho outra paixão que e a de transmitir conhecimento
+              então gravo muito vlog.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Dezembro 2009 - Dias atuais</span>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Editor de video</h3>
+            <div class="subheading mb-3">Utilização de software para melhoramento de vídeo e adição de efeitos</div>
+            <p>
+              Iniciei minha jornada como editor em 2009 que comecei
+              a aprender eu tinha 9 anos na época, hoje já edito em várias ferramentas
+              de edição dentre elas, Sony Vegas e Premiere.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Dezembro 2009 - Dias atuais</span>
+          </div>
         </div>
 
       </div>
-    </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Formação</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Aprendiz em desenvolvimento de software</h3>
+            <div class="subheading mb-3">Sankhya - Aprendiz</div>
+            <div>Aprendo os processos da empresa e como desenvolver software</div>
+          </div>
+
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Setembro 2018 - Dezembro 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">SENAI Santa Rosa Dr. Celso Charuri</h3>
+            <div class="subheading mb-3">Aprendiz em etromecânica</div>
+            <div>Aprendizagem em processos industrias</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2018 - Dezembro 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Curso - Inglês CCAA</h3>
+            <div class="subheading mb-3">Curso de inglês que realizei no periodo de 1 ano e 6 mêses</div>
+            <div>No CCAA existe o sistema de livros, eu terminei no terceiro livro indo pró intermediário</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Julho 2018 - Dezembro 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Cursos - EAD</h3>
+            <div class="subheading mb-3"> Aprendizado a distancia com cursos EAD</div>
+            <div>Cursos da área de desenvolvimento de software e da área administrativa e marketing</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janeiro 2014 - Dias atuais</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Habilidades</h2>
+
+        <div class="subheading mb-3">Capacidade &amp; Ferramentas</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-cuttlefish"></i>
+          </li> 
+          <li class="list-inline-item">
+            <i class="fas fa-ad"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-play-circle"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-youtube"></i>
+          </li>
+        
+
+        </ul>
+
+        <div class="subheading mb-3">Oque eu sei fazer</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Java, Java Web, Python, C, C++,C# &amp; Kotlin</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+              HTML5,Javascript &amp; CSS
+            </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Angular &amp; Bootstrap
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Microsoft SQL Server &amp; MySQL
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Brainstorm, Pomodoro, Diagrama de Ishikawa &amp; 5S's
+          </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Inglês Intermediario I - Ouvir e escrever.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interesses</h2>
+      <p>
+        Eu tenho interesse pela área da tecnologia voltada ao empreendedorismo e 
+        gestão e sou um amante da educação e como
+        hobby escrevo e-books ou crio materiais de aprendizagem.
+      </p>
+
+      <p>
+        Eu tenho interesse pela área da tecnologia voltada ao empreendedorismo e
+        gestão e sou um amante da educação e como
+        hobby escrevo e-books ou crio materiais de aprendizagem.
+      </p>
+
+      <p>
+        Estudo por conta em cursos EAD muitos conceitos de desenvolvimento WEB por ter uma preferencia
+        e para implementar em projetos pessoais meus.
+      </p>
+
+      <p>
+        Tenho interesse em futuramente realizar palestras por gostar de falar e de transmitir conhecimento
+        e tenho um canal no youtube.
+      </p>
+
+      <p>
+        Gosto muito de aprender novas linguas, estudo atualmente Inglês e Japonês
+      </p>
+
+      <p>
+        Estudo muito o processo de desenvolvimento de um produto desde a sua concepção até o seu termino 
+        passando pelo processo de como entregar o produto para o cliente e a melhor forma 
+        de realizar o marketing.
+      </p>
+
+      <p class="mb-0">
+        Como amante do conhecimento eu leio muito e estudo bastante diversas áreas além da tecnologia
+        como marketing, desenvolvimento ágil, gestão e gerencia &amp; vendas.
+      </p>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Portfólio </h2>
+        <ul class="fa-ul mb-0">
+          
+          <li>
+            
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/lista" target="_blank">Aplicação lista de tarefa</a>
+          <li>
+            
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/layout-area-de-compras " target="_blank">Layout de uma area de compras para e-commercer</a>
+          </li>
+          
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/GabaritoHTML" target="_blank">Sistema de gabarito por tempo</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/jogo-incremental-clicker" target="_blank">Jogo de point-and-click</a>
+          </li>
+
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/sistema-filmes" target="_blank">Sistema de filmes</a>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/RansomwaresPyhton" target="_blank">Ransomware em Pyhton</a>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://github.com/IltonBJSilva/GameFisica" target="_blank">Jogo que ensina fisica</a>
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/profile/237982" target="_blank">Uri online judge</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
 
 </html>
