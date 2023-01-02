@@ -175,3 +175,35 @@ font-family: 'EB Garamond', serif;
 		background-attachment: fixed;
 	}
 }
+
+
+
+@media (max-width: 722px) {
+	section#inicio {
+		width: 900px;
+	}
+	body{
+		word-break: break-all;
+		text-align:center;
+		position: absolute;
+	}
+	h1{
+		word-break: break-all;
+	}
+}
+
+
+
+@media (max-width: 170px) {
+	section#inicio {
+		width: 900px;
+	}
+	body{
+		word-break: break-all;
+		position: relative;
+	}
+
+}
+
+
+
