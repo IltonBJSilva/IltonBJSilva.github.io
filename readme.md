@@ -1,29 +1,58 @@
-# Portfolio Github Page
+# 👨‍💻 Portfólio Profissional - Ilton Batista
 
-Apenas o repositório da pagina do meu portfólio pelo sistema de  page do github.
+> “Transformando ideias complexas em soluções eficientes com propósito, técnica e alma.”
 
-## 🚀 Começando
+Bem-vindo ao meu portfólio! Aqui você encontra uma vitrine interativa da minha trajetória como desenvolvedor de software, com projetos reais, experiências de mercado, objetivos estratégicos e minha missão de unir **ciência, tecnologia e impacto humano**.
 
-Desenvolvi a partir de exemplos que encontrei pela internet para consegui mostrar da melhor forma meu trabalho em desenvolvimento de software.
+---
 
-### 📋 Como acessar
+## ✨ Sobre mim
 
-Simples, e apenas acessar pelo próprio link.
+Sou Ilton Batista, engenheiro de software, programador backend e estudante de Sistemas de Informação na UFU. Atuo diariamente com desafios técnicos reais, criando soluções escaláveis e eficientes, com foco em automação, APIs, dados e integrações. Tenho como meta crescer como especialista técnico e pesquisador, unindo minha paixão por ciência, filosofia e espiritualidade.
 
-[Clique aqui](https://iltonbjsilva.github.io/)
+---
 
-### 🔧 Quais tecnologias foram usadas?
+## 🎯 Objetivos Profissionais
 
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/Javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-<img src="https://img.shields.io/badge/Saas-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-<img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" />
+- Alcançar proficiência avançada em arquitetura de software
+- Contribuir com projetos open source
+- Obter certificações relevantes em cloud e DevOps
+- Assumir posição de liderança técnica (Tech Lead)
+- Desenvolver e lançar um produto digital próprio
+- Trabalhar com times internacionais e multiculturais
+- Publicar conteúdo técnico em blog ou canal
+- Participar e palestrar em eventos da área
+- Especializar-se em IA aplicada ou ciência de dados
+- Aplicar tecnologia em projetos com impacto social real
 
-## 📌 Fotos
+---
 
-Imagem do projeto
+## 🛠️ Tecnologias que utilizo
 
-![enter image description here](https://github.com/IltonBJSilva/IltonBJSilva.github.io/blob/master/img/projetos/portfolio.png?raw=true)
+**Linguagens:**
+`Python`, `TypeScript`, `JavaScript`, `Java`, `C#`
+
+**Frameworks e libs:**
+`Django`, `React`, `Angular`, `Spring Boot`
+
+**Banco de Dados & Dados:**
+`MySQL`, `PostgreSQL`, `BigQuery`, `SQL`, `NoSQL`
+
+**Ferramentas e Cloud:**
+`Google Cloud Platform (GCP)`, `Docker`, `Git`, `Pipefy`, `CI/CD`, `Selenium`
+
+**Extras:**
+APIs REST & GraphQL, automações, testes, scraping, integrações
+
+---
+
+## 📌 Estrutura do Projeto
+
+```bash
+📦 Meu Portfólio
+ ┣ 📂components        # Seções como Sobre, Projetos, Experiências etc.
+ ┣ 📂data              # Dados dos projetos, objetivos e conteúdo dinâmico
+ ┣ 📂ui                # Componentes visuais reutilizáveis (Badge, Card, Button)
+ ┣ 📂pages             # Página principal e seções
+ ┗ 📄README.md         # Documentação
+```
