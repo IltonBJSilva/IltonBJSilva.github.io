@@ -34,9 +34,11 @@ const HomeSection: React.FC = () => {
           
           <div className="mb-10 animate-fade-in-delay-3">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              Desenvolvedor Backend apaixonado por ciência, filosofia e espiritualidade. 
-              Atuo com Python, GCP, BigQuery, Pipefy, automações e APIs escaláveis. 
-              Buscando sempre impactar de forma positiva através da tecnologia.
+              Sou desenvolvedor Backend com experiência em Python, Google Cloud Platform (GCP), 
+              BigQuery, Pipefy, automações e integrações com APIs escaláveis. Tenho como objetivo 
+              transformar desafios técnicos em soluções inteligentes, eficientes e sustentáveis. 
+              Acredito que a tecnologia, quando bem aplicada, tem o poder de gerar impacto real e 
+              positivo na vida das pessoas e nos processos de negócios.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mt-8">

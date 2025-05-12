@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
           <div className="lg:col-span-3">
             <Card>
               <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                "Sou Ilton Batista, engenheiro de software que busca aliar espiritualidade, ciência e tecnologia para criar soluções de impacto. Acredito que programar é mais do que codar: é construir pontes entre pessoas, ideias e o futuro."
+                "Sou Ilton Batista, engenheiro de software que busca unir ciência e tecnologia para desenvolver soluções que gerem impacto real. Acredito que programar vai além do código: é conectar pessoas, ideias e transformar o futuro."
               </p>
             </Card>
           </div>
@@ -27,15 +27,11 @@ const AboutSection: React.FC = () => {
                 </li>
                 <li className="flex">
                   <span className="mr-2">•</span>
-                  <p>Pretendo alcançar o mestrado e doutorado no futuro.</p>
+                  <p>Com objetivo solido em alcançar o mestrado e doutorado.</p>
                 </li>
                 <li className="flex">
                   <span className="mr-2">•</span>
                   <p>Desejo participar de pesquisas científicas, projetos de inovação e iniciação científica.</p>
-                </li>
-                <li className="flex">
-                  <span className="mr-2">•</span>
-                  <p>Sonho em me destacar como pesquisador e criador de novas soluções em computação.</p>
                 </li>
               </ul>
             </Card>
@@ -47,15 +43,15 @@ const AboutSection: React.FC = () => {
               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 <li className="flex">
                   <span className="mr-2">•</span>
-                  <p>Quero atuar na prática, enfrentando desafios técnicos do dia a dia.</p>
+                  <p>Forte atuação no mecado, enfrentando desafios técnicos do dia a dia.</p>
                 </li>
                 <li className="flex">
                   <span className="mr-2">•</span>
-                  <p>Busco resolver problemas reais de negócios com tecnologia.</p>
+                  <p>Resolvo problemas reais de negócios com tecnologia diaramente.</p>
                 </li>
                 <li className="flex">
                   <span className="mr-2">•</span>
-                  <p>Pretendo trabalhar em várias frentes: backend, automação, dados e integrações.</p>
+                  <p>Trabalho em algumas frentes como: backend, automação, dados e integrações, porem com forte interesse em me aprimorar em IA.</p>
                 </li>
                 <li className="flex">
                   <span className="mr-2">•</span>
@@ -64,6 +60,7 @@ const AboutSection: React.FC = () => {
               </ul>
             </Card>
           </div>
+
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ export const navItems: NavItem[] = [
 export const socialLinks: SocialLink[] = [
   { 
     platform: "GitHub", 
-    url: "https://github.com/iltonbatista", 
+    url: "https://github.com/IltonBJSilva", 
     icon: "Github" 
   },
   { 
@@ -22,22 +22,13 @@ export const socialLinks: SocialLink[] = [
     icon: "Linkedin" 
   },
   { 
-    platform: "YouTube", 
-    url: "https://youtube.com/iltonbatista", 
-    icon: "Youtube" 
-  },
-  { 
     platform: "Portfólio", 
-    url: "https://iltonbatista.github.io", 
+    url: "https://github.com/IltonBJSilva/IltonBJSilva.github.io", 
     icon: "ExternalLink" 
   },
 ];
 
 export const contactInfo = [
-  { 
-    icon: "MapPin", 
-    text: "Uberlândia - MG" 
-  },
   { 
     icon: "Phone", 
     text: "(34) 99670-8213" 
@@ -60,6 +51,29 @@ export const experiences: Experience[] = [
       "Automação com Selenium e decisões baseadas em dados"
     ],
     technologies: ["Python", "GCP", "BigQuery", "Pipefy", "Selenium", "Machine Learning"]
+  },
+    {
+    title: "Software Developer",
+    company: "ASCII Empresa Júnior (Facom/UFU)",
+    period: "Out/2024 – Atualmente",
+    description: [
+      "Desenvolvimento Fullstack com Flutter, React.js, Node.js, JS",
+      "Criação de interfaces UX/UI com HTML e CSS",
+      "Banco de dados relacionais otimizados",
+      "Suporte em sistemas operacionais e infraestrutura",
+      "Trabalho em equipe com versionamento (Git)"
+    ],
+    technologies: ["Flutter", "React.js", "Node.js", "JavaScript", "Git"]
+  },
+  {
+    title: "Trainee de Desenvolvimento",
+    company: "ASCII Empresa Júnior",
+    period: "Ago/2024 a Nov/2024",
+    description: [
+      "Atuação inicial na equipe de projetos",
+      "Aprendizado em Flutter, React, JS, infraestrutura e banco"
+    ],
+    technologies: ["Flutter", "React", "JavaScript"]
   },
   {
     title: "Software Developer",
@@ -87,29 +101,6 @@ export const experiences: Experience[] = [
     technologies: ["Python", "Django", "Selenium", "Docker", "Redes"]
   },
   {
-    title: "Software Developer",
-    company: "ASCII Empresa Júnior (Facom/UFU)",
-    period: "Out/2024 – Atualmente",
-    description: [
-      "Desenvolvimento Fullstack com Flutter, React.js, Node.js, JS",
-      "Criação de interfaces UX/UI com HTML e CSS",
-      "Banco de dados relacionais otimizados",
-      "Suporte em sistemas operacionais e infraestrutura",
-      "Trabalho em equipe com versionamento (Git)"
-    ],
-    technologies: ["Flutter", "React.js", "Node.js", "JavaScript", "Git"]
-  },
-  {
-    title: "Trainee de Desenvolvimento",
-    company: "ASCII Empresa Júnior",
-    period: "Ago/2024 a Nov/2024",
-    description: [
-      "Atuação inicial na equipe de projetos",
-      "Aprendizado em Flutter, React, JS, infraestrutura e banco"
-    ],
-    technologies: ["Flutter", "React", "JavaScript"]
-  },
-  {
     title: "Suporte de Infraestrutura de Redes",
     company: "K2 Partnering Solutions",
     period: "Jan/2021 a Fev/2021",
@@ -135,65 +126,87 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "Sistema de Relatórios Automáticos com Pipefy + BigQuery",
-    description: "Python, Flask, SQL, GCP, autenticação via tokens",
-    technologies: ["Python", "Flask", "SQL", "GCP"],
-    category: "Backend"
+    title: "Assistente Virtual Tina com Comandos de Voz",
+    description: "Assistente virtual feita em Python com reconhecimento de voz, respostas faladas, execução de comandos, integração com Wikipedia, YouTube e criação de lista de tarefas.",
+    technologies: ["Python", "SpeechRecognition", "pyttsx3", "pywhatkit", "Wikipedia", "PyAudio"],
+    category: "Backend",
+    url: "https://github.com/IltonBJSilva/alexa_with_python"
   },
   {
-    title: "APIs com Machine Learning",
-    description: "Python, Scikit-Learn, integração com front e GCP",
-    technologies: ["Python", "Scikit-Learn", "GCP"],
-    category: "Backend"
+    title: "API Flask com integração ao Pipefy",
+    description: "Servidor Flask que faz requisição GraphQL à API do Pipefy e retorna os títulos dos cards de uma fase específica.",
+    technologies: ["Python", "Flask", "GraphQL", "Pipefy API"],
+    category: "Backend",
+    url: "https://github.com/IltonBJSilva/pipefy-api"
   },
   {
-    title: "Interface com React para Visualização de Dados",
-    description: "ReactJS + ChartJS + Axios para dashboards",
-    technologies: ["React", "ChartJS", "Axios"],
-    category: "Frontend"
+    title: "Sistema Bancário em Python",
+    description: "Projeto educacional com operações básicas de conta bancária: depósito, saque e extrato, com salvamento de transações em arquivo.",
+    technologies: ["Python", "Programação Orientada a Objetos", "Arquivos"],
+    category: "Backend",
+    url: "https://github.com/IltonBJSilva/system_bank"
   },
   {
-    title: "Portal de Adoção de Pets (Frontend)",
-    description: "HTML, CSS, JS",
+    title: "Projeto de Desenvolvimento Backend com Python e Flask",
+    description: "Backend para aplicação web, com autenticação JWT, gestão de usuários, e recursos RESTful, utilizando Flask, SQLAlchemy e JWT.",
+    technologies: ["Python", "Flask", "SQLAlchemy", "JWT", "PostgreSQL/MySQL"],
+    category: "Backend",
+    url: "https://github.com/IltonBJSilva/FlaskSecureAPI"  
+  },
+
+  {
+    title: "Dev Burguer",
+    description: "Projeto de aplicação full-stack utilizando Django, com foco no princípio DRY (Don't Repeat Yourself). A aplicação permite praticar boas práticas de desenvolvimento, criando um sistema de gerenciamento de produtos e pedidos para uma hamburgueria.",
+    technologies: ["Python", "Django", "HTML", "CSS", "JavaScript"],
+    category: "Frontend",
+    url: "https://github.com/IltonBJSilva/devburguer"
+  },
+  {
+    title: "Loja de Roupas Online (Frontend)",
+    description: "Site de loja de roupas desenvolvido com HTML, CSS e JavaScript, incluindo páginas como Home, Produtos, Detalhes, Entrega, Sobre e Contato, com foco em usabilidade e responsividade.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    category: "Frontend"
+    category: "Frontend",
+    url: "https://github.com/IltonBJSilva/loja_de_roupas"
   },
   {
     title: "Sistema ADO.TE",
     description: "Django + SQLite, login, cadastro de pets, filtro e requisição de adoção",
-    technologies: ["Django", "SQLite"],
-    category: "Fullstack"
+    technologies: ["Django", "SQLite", "Python", "HTML", "CSS", "JavaScript"],
+    category: "Fullstack",
+    url: "https://github.com/IltonBJSilva/adote"
   },
   {
-    title: "CRUD de Filmes (Libook)",
-    description: "Spring Boot + Angular",
-    technologies: ["Spring Boot", "Angular"],
-    category: "Fullstack"
+    title: "Libook – CRUD de Livros",
+    description: "Projeto Django com login, cadastro de usuários e CRUD completo de livros usando Allauth, Bootstrap e SQLite.",
+    technologies: ["Django", "Python", "HTML", "CSS", "Bootstrap", "SQLite", "Allauth"],
+    category: "Fullstack",
+    url: "https://github.com/IltonBJSilva/book_schedule"
   },
   {
-    title: "Dashboard de Análise de Supermercado",
-    description: "Python, Pandas, Matplotlib",
-    technologies: ["Python", "Pandas", "Matplotlib"],
-    category: "Academic"
+    title: "Nutrilab – Plataforma de Plano Alimentar",
+    description: "Aplicação Django para gerenciamento de planos alimentares com autenticação e CRUD de opções alimentares.",
+    technologies: ["Django", "Python", "SQLite", "HTML", "CSS"],
+    category: "Fullstack",
+    url: "https://github.com/IltonBJSilva/nutrilab"
   },
-  {
-    title: "Game Web Educativo",
-    description: "HTML, CSS, JavaScript",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    category: "Academic"
-  }
 ];
+
 
 export const objectives = [
-  "Evoluir para especialista em backend distribuído",
-  "Tornar-se pesquisador em ciência da computação aplicada",
-  "Atuar em projetos com impacto social real",
-  "Publicar artigos técnicos e científicos",
-  "Construir uma ponte entre fé, ciência e tecnologia"
+  "Alcançar proficiência avançada em arquitetura de software",
+  "Contribuir regularmente com projetos open source",
+  "Obter certificações relevantes em nuvem e DevOps",
+  "Assumir posição de liderança técnica (Tech Lead)",
+  "Desenvolver e lançar um produto digital próprio (app, SaaS, lib)",
+  "Trabalhar com equipes internacionais em projetos globais",
+  "Publicar conteúdo técnico em blog ou canal no YouTube",
+  "Participar e palestrar em eventos da área de tecnologia",
+  "Especializar-se em uma área de alta demanda (IA, dados, mobile etc.)",
+  "Aplicar tecnologia em projetos com impacto social ou sustentável"
 ];
 
+
 export const extraItems = [
-  "Criador de conteúdo no YouTube com foco em espiritualidade e tecnologia",
   "Aficionado por filosofia, moral e ciência",
   "Experiência com redes, infraestrutura e sistemas operacionais",
   "Já liderou prototipagens e documentações em equipe",

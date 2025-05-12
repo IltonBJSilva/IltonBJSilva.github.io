@@ -5,7 +5,7 @@ import Badge from '../ui/Badge';
 import { projects } from '../../data/content';
 
 const ProjectsSection: React.FC = () => {
-  const categories = ['Todos', 'Backend', 'Frontend', 'Fullstack', 'Academic'];
+  const categories = ['Todos', 'Backend', 'Frontend', 'Fullstack'];
   const [activeCategory, setActiveCategory] = useState('Todos');
   
   const filteredProjects = activeCategory === 'Todos' 
@@ -47,13 +47,21 @@ const ProjectsSection: React.FC = () => {
                 </Badge>
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mt-auto pt-4">
+              <div className="flex flex-wrap gap-2 pt-4">
                 {project.technologies.map((tech, i) => (
                   <span key={i} className="text-xs bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 px-2 py-1 rounded">
                     {tech}
                   </span>
                 ))}
               </div>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-sm text-blue-600 hover:underline dark:text-blue-400"
+              >
+                <a href="https://github.com/IltonBJSilva?tab=repositories">Ver Projeto</a>
+              </a>
             </Card>
           ))}
         </div>

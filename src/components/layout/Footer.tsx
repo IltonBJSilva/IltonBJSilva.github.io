@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-blue-700 dark:text-blue-400">Ilton Batista</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Desenvolvedor Backend apaixonado por ciência, filosofia e espiritualidade.
+              Desenvolvedor Backend movido por curiosidade científica e paixão por resolver problemas com tecnologia.
             </p>
             <div className="flex space-x-4 mt-4">
               {socialLinks.map((link, index) => (
