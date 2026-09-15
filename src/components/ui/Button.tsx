@@ -9,6 +9,7 @@ interface ButtonProps {
   href?: string;
   onClick?: () => void;
   className?: string;
+  download?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   href,
   onClick,
   className = '',
+  download,
 }) => {
   const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50";
   
@@ -45,7 +47,13 @@ const Button: React.FC<ButtonProps> = ({
   
   if (href) {
     return (
-      <a href={href} className={styles} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+      <a 
+        href={href} 
+        className={styles} 
+        target={href.startsWith('http') && !download ? '_blank' : undefined} 
+        rel={href.startsWith('http') && !download ? 'noopener noreferrer' : undefined}
+        download={download}
+      >
         {content}
       </a>
     );

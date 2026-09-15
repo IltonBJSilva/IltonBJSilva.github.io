@@ -27,6 +27,7 @@ export const pt = {
     quote: "\"Transformando ideias complexas em soluções eficientes com propósito, técnica e alma.\"",
     description: "Sou desenvolvedor Backend com experiência em Python, Google Cloud Platform (GCP), BigQuery, Pipefy, automações e integrações com APIs escaláveis. Tenho como objetivo transformar desafios técnicos em soluções inteligentes, eficientes e sustentáveis. Acredito que a tecnologia, quando bem aplicada, tem o poder de gerar impacto real e positivo na vida das pessoas e nos processos de negócios.",
     readMore: "Saiba mais",
+    downloadCV: "Baixar Currículo",
   },
 
   about: {

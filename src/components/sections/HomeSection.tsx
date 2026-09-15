@@ -1,11 +1,23 @@
 import React from 'react';
 import Button from '../ui/Button';
-import { Github, Linkedin, Youtube, ExternalLink, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Youtube, ExternalLink, ChevronDown, Download } from 'lucide-react';
 import profilePic from '../../photo/ilton.png';
 import { useLanguage } from '../../context/LanguageContext';
+import cvPt from '../../docs/Programador - CV - Curriculo.pdf';
+import cvEn from '../../docs/Inglês - Programador - CV - Ilton - Curriculo.pdf';
+import cvEs from '../../docs/Espanhol_Curriculo_Ilton.pdf';
 
 const HomeSection: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const getCvUrl = () => {
+    switch (language) {
+      case 'en': return cvEn;
+      case 'es': return cvEs;
+      case 'pt':
+      default: return cvPt;
+    }
+  };
 
   const getIcon = (iconName: string) => {
     const iconProps = { size: 20 };
@@ -64,6 +76,14 @@ const HomeSection: React.FC = () => {
                   </Button>
                 );
               })}
+              <Button 
+                href={getCvUrl()} 
+                variant="primary" 
+                icon={Download}
+                download
+              >
+                {t.home.downloadCV}
+              </Button>
             </div>
           </div>
           
