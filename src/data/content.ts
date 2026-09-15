@@ -7,7 +7,7 @@ export const navItems: NavItem[] = [
   { label: "Experiências", href: "#experiences" },
   { label: "Projetos", href: "#projects" },
   { label: "Objetivos", href: "#objectives" },
-  { label: "Extra", href: "#extra" },
+  { label: "Habilidades Técnicas", href: "#extra" },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -41,86 +41,67 @@ export const contactInfo = [
 
 export const experiences: Experience[] = [
   {
+    title: "Desenvolvedor de Software Full Stack",
+    company: "ASCII Empresa Júnior (FACOM/UFU)",
+    period: "Outubro 2024 – Atual",
+    description: [
+      "Desenvolvimento de soluções web e mobile para clientes reais, atuando no desenvolvimento frontend, backend, bancos de dados e infraestrutura das aplicações.",
+      "Desenvolvimento de aplicações utilizando Flutter, React.js, Node.js e JavaScript.",
+      "Implementação e otimização de bancos de dados relacionais, com foco em desempenho e facilidade de manutenção.",
+      "Desenvolvimento de interfaces modernas utilizando HTML e CSS, com atenção à experiência e usabilidade do usuário.",
+      "Utilização de práticas de versionamento, suporte à infraestrutura e desenvolvimento colaborativo de software."
+    ],
+    technologies: ["Flutter", "React.js", "Node.js", "JavaScript", "HTML", "CSS", "SQL", "Git"]
+  },
+  {
+    title: "Engenheiro de Software Freelancer",
+    company: "Workana",
+    period: "Janeiro 2026 – Abril 2026",
+    description: [
+      "Desenvolvimento e modernização de um CRM corporativo utilizando Node.js, TypeScript e PostgreSQL.",
+      "Atuação na arquitetura backend, modelagem de dados e modernização da aplicação.",
+      "Estruturação de pipelines de CI/CD e ambientes em nuvem para melhorar os processos de desenvolvimento e implantação."
+    ],
+    technologies: ["Node.js", "TypeScript", "PostgreSQL", "CI/CD", "Cloud"]
+  },
+  {
     title: "Engenheiro de Software",
     company: "Accenture",
-    period: "Jan/2025 – Atualmente",
+    period: "Dezembro 2023 – Janeiro 2026",
     description: [
-      "Backend em Python com APIs escaláveis",
-      "Integração com BigQuery, Pipefy, Machine Learning e GCP",
-      "Uso avançado de Cloud Functions, Pub/Sub e Cloud Storage",
-      "Automação com Selenium e decisões baseadas em dados"
+      "Desenvolvimento e manutenção de APIs backend e serviços escaláveis utilizando Python e Google Cloud Platform.",
+      "Integração com BigQuery para consulta e processamento de grandes volumes de dados, apoiando pipelines analíticos e relatórios de negócio.",
+      "Implementação de soluções GraphQL para otimizar a comunicação entre aplicações cliente e serviços backend.",
+      "Desenvolvimento de soluções orientadas a eventos utilizando Cloud Functions, Pub/Sub e Cloud Storage.",
+      "Automação de processos repetitivos utilizando Selenium e Pipefy, aumentando a eficiência operacional.",
+      "Refatoração de sistemas e consultas de banco de dados, proporcionando mais de 60% de ganho de eficiência e redução de custos operacionais.",
+      "Integração de soluções de Machine Learning e desenvolvimento de aplicações utilizando OutSystems em ambientes corporativos."
     ],
-    technologies: ["Python", "GCP", "BigQuery", "Pipefy", "Selenium", "Machine Learning"]
-  },
-    {
-    title: "Software Developer",
-    company: "ASCII Empresa Júnior (Facom/UFU)",
-    period: "Out/2024 – Atualmente",
-    description: [
-      "Desenvolvimento Fullstack com Flutter, React.js, Node.js, JS",
-      "Criação de interfaces UX/UI com HTML e CSS",
-      "Banco de dados relacionais otimizados",
-      "Suporte em sistemas operacionais e infraestrutura",
-      "Trabalho em equipe com versionamento (Git)"
-    ],
-    technologies: ["Flutter", "React.js", "Node.js", "JavaScript", "Git"]
+    technologies: ["Python", "GCP", "BigQuery", "GraphQL", "Cloud Functions", "Pub/Sub", "Cloud Storage", "Selenium", "Pipefy", "Machine Learning", "OutSystems"]
   },
   {
-    title: "Trainee de Desenvolvimento",
-    company: "ASCII Empresa Júnior",
-    period: "Ago/2024 a Nov/2024",
-    description: [
-      "Atuação inicial na equipe de projetos",
-      "Aprendizado em Flutter, React, JS, infraestrutura e banco"
-    ],
-    technologies: ["Flutter", "React", "JavaScript"]
-  },
-  {
-    title: "Software Developer",
+    title: "Analista de Infraestrutura de Redes",
     company: "Accenture",
-    period: "Dez/2023 a Fev/2025",
+    period: "Fevereiro 2021 – Dezembro 2023",
     description: [
-      "APIs com Python + GCP",
-      "Integração com GraphQL",
-      "BigQuery para análise de dados",
-      "Machine Learning aplicado em sistemas reais",
-      "Criação de pipelines e relatórios para insights críticos"
+      "Atuação com redes GPON, redes metálicas, infraestrutura VoIP, ativação de internet, telefonia fixa, VPNs e configurações de rede.",
+      "Suporte a ambientes residenciais e corporativos, incluindo configurações de IP fixo e troubleshooting.",
+      "Atuação com tecnologias e equipamentos Nokia, FiberHome, Huawei, Calix e Zhone.",
+      "Desenvolvimento de ferramentas internas de automação utilizando Python, Django, MySQL, Docker e Selenium.",
+      "Automação de aproximadamente 80% das tarefas manuais e contribuição para uma redução de aproximadamente 50% no tempo médio de atendimento da equipe."
     ],
-    technologies: ["Python", "GCP", "GraphQL", "BigQuery", "Machine Learning"]
+    technologies: ["Redes GPON", "VoIP", "Python", "Django", "MySQL", "Docker", "Selenium"]
   },
   {
-    title: "Analista de Suporte de TI / Infraestrutura de Redes",
-    company: "Accenture",
-    period: "Fev/2021 a Dez/2023",
+    title: "Desenvolvedor de Software Full Stack",
+    company: "Sankhya",
+    period: "Agosto 2018 – Janeiro 2020",
     description: [
-      "Suporte e ativação de redes (GPON, VOIP, metálica)",
-      "Atendimentos de residenciais a corporativos com IP fixo",
-      "Ferramentas criadas com Python, Django, Selenium e Docker para automação de processos internos",
-      "Tecnologias: Nokia, Fiberhome, Huawei, Calix, Zhone"
+      "Desenvolvimento de ferramentas internas e soluções de automação para otimizar processos manuais.",
+      "Desenvolvimento utilizando Java, Java Web, Spring Boot, Angular, MySQL e AJAX, além de prototipação e documentação de projetos.",
+      "Contribuição para soluções que reduziram em aproximadamente 50% o tempo de execução de fluxos de trabalho."
     ],
-    technologies: ["Python", "Django", "Selenium", "Docker", "Redes"]
-  },
-  {
-    title: "Suporte de Infraestrutura de Redes",
-    company: "K2 Partnering Solutions",
-    period: "Jan/2021 a Fev/2021",
-    description: [
-      "Ativação e configuração de redes GPON e metálica",
-      "IP fixo, telefonia, VOIP e redes corporativas"
-    ],
-    technologies: ["Redes", "GPON", "VOIP"]
-  },
-  {
-    title: "Software Developer Fullstack (Aprendiz)",
-    company: "Sankhya Gestão de Negócios",
-    period: "Out/2018 a Jan/2020",
-    description: [
-      "Sistemas internos para otimizar rotinas da empresa",
-      "Tecnologias: Java, Spring Boot, Angular, MySQL, HTML, CSS, JS",
-      "Projetos: jogo web, sistema de filmes, ferramenta de gerenciamento de projetos",
-      "Documentação, prototipagem e agilidade na entrega"
-    ],
-    technologies: ["Java", "Spring Boot", "Angular", "MySQL", "HTML", "CSS", "JavaScript"]
+    technologies: ["Java", "Spring Boot", "Angular", "MySQL", "AJAX"]
   }
 ];
 
@@ -207,9 +188,13 @@ export const objectives = [
 
 
 export const extraItems = [
-  "Aficionado por filosofia, moral e ciência",
-  "Experiência com redes, infraestrutura e sistemas operacionais",
-  "Já liderou prototipagens e documentações em equipe",
-  "Conhecimentos em OutSystems, Flutter, React, CI/CD, Docker",
-  "Apaixonado por aprendizado contínuo e storytelling"
+  "Linguagens: Python, TypeScript, JavaScript, Java, C#, C, C++",
+  "Backend: Django, Node.js, APIs REST, GraphQL, Webhooks, JWT, Processamento Assíncrono",
+  "Arquitetura: Microsserviços, Orientada a Eventos, Arquitetura Limpa, SOLID, DRY, KISS",
+  "Bancos de Dados: PostgreSQL, MySQL, BigQuery, Redis, Modelagem Relacional, Otimização SQL",
+  "Cloud e DevOps: GCP, Cloud Functions, Pub/Sub, Cloud Storage, Docker, CI/CD, Kubernetes",
+  "Frontend e Mobile: React, Angular, Flutter, HTML5, CSS3, TailwindCSS",
+  "Automação e IA: Selenium, Automação de Processos, Machine Learning, OCR, Extração de Dados",
+  "Ferramentas: Git, GitHub, GitLab, Pipefy, Vercel, Render, Cloudflare R2",
+  "Testes: pytest, unittest, Testes Unitários, de Integração e Funcionais"
 ];

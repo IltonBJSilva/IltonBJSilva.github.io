@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
-import { navItems } from '../../data/content';
+import { useLanguage, Language } from '../../context/LanguageContext';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,6 +44,18 @@ const Header: React.FC = () => {
     }
   };
 
+  const LanguageSelector = () => (
+    <select
+      value={language}
+      onChange={(e) => setLanguage(e.target.value as Language)}
+      className="bg-transparent text-gray-700 dark:text-gray-300 font-medium focus:outline-none cursor-pointer border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1 mx-2"
+    >
+      <option value="pt">PT</option>
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+    </select>
+  );
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -61,7 +75,7 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
+            {t.navItems.map((item) => (
               <a 
                 key={item.href}
                 href={item.href}
@@ -70,6 +84,9 @@ const Header: React.FC = () => {
                 {item.label}
               </a>
             ))}
+            
+            <LanguageSelector />
+            
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -81,6 +98,8 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center md:hidden">
+            <LanguageSelector />
+            
             <button
               onClick={toggleTheme}
               className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
@@ -104,7 +123,7 @@ const Header: React.FC = () => {
         <div className="md:hidden bg-white dark:bg-gray-900 shadow-md mt-2">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
+              {t.navItems.map((item) => (
                 <a 
                   key={item.href}
                   href={item.href}

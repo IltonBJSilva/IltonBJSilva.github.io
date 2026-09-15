@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import Card from '../ui/Card';
 import Badge from '../ui/Badge';
-import { projects } from '../../data/content';
+import { useLanguage } from '../../context/LanguageContext';
 
 const ProjectsSection: React.FC = () => {
+  const { t } = useLanguage();
   const categories = ['Todos', 'Backend', 'Frontend', 'Fullstack'];
   const [activeCategory, setActiveCategory] = useState('Todos');
   
   const filteredProjects = activeCategory === 'Todos' 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
+    ? t.projects 
+    : t.projects.filter(project => project.category === activeCategory);
 
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <SectionTitle title="Projetos" emoji="🛠️" id="projects" />
+        <SectionTitle title={t.projectsSection.title} emoji="🛠️" id="projects" />
         
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((category) => (
@@ -60,7 +61,7 @@ const ProjectsSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="mt-4 inline-block text-sm text-blue-600 hover:underline dark:text-blue-400"
               >
-                <a href="https://github.com/IltonBJSilva?tab=repositories">Ver Projeto</a>
+                {t.projectsSection.viewCode}
               </a>
             </Card>
           ))}

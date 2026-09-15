@@ -1,17 +1,18 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
-import { objectives } from '../../data/content';
 import { Target } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const ObjectivesSection: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
-        <SectionTitle title="Objetivos" emoji="🎯" id="objectives" />
+        <SectionTitle title={t.objectivesSection.title} emoji="🎯" id="objectives" />
         
         <div className="max-w-3xl mx-auto">
           <ul className="space-y-6">
-            {objectives.map((objective, index) => (
+            {t.objectives.map((objective, index) => (
               <li 
                 key={index} 
                 className="flex items-start p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition hover:shadow-lg hover:-translate-y-1"

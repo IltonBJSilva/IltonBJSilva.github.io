@@ -7,6 +7,7 @@ import ExperienceSection from './components/sections/ExperienceSection';
 import ProjectsSection from './components/sections/ProjectsSection';
 import ObjectivesSection from './components/sections/ObjectivesSection';
 import ExtraSection from './components/sections/ExtraSection';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   useEffect(() => {
@@ -28,18 +29,20 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-      <Header />
-      <main>
-        <HomeSection />
-        <AboutSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ObjectivesSection />
-        <ExtraSection />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+        <Header />
+        <main>
+          <HomeSection />
+          <AboutSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <ObjectivesSection />
+          <ExtraSection />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

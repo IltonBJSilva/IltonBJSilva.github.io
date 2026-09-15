@@ -1,60 +1,45 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
+import Card from '../ui/Card';
 import Badge from '../ui/Badge';
-import { experiences } from '../../data/content';
+import { useLanguage } from '../../context/LanguageContext';
 
 const ExperienceSection: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
-        <SectionTitle title="Experiências" emoji="💼" id="experiences" />
+        <SectionTitle title={t.experiencesSection.title} emoji="💼" id="experiences" />
         
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-200 dark:bg-blue-900/50"></div>
-          
-          <div className="space-y-12">
-            {experiences.map((experience, index) => (
-              <div 
-                key={index} 
-                className={`relative flex flex-col md:flex-row ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 dark:bg-blue-400"></div>
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-blue-300 dark:before:via-blue-700 before:to-transparent">
+            {t.experiences.map((exp, index) => (
+              <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-gray-950 bg-blue-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                  <span className="text-xs font-bold">{t.experiences.length - index}</span>
+                </div>
                 
-                {/* Content */}
-                <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'} pl-8`}>
-                  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <div className="mb-2">
-                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {experience.period}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-1">
-                      {experience.title}
-                    </h3>
-                    <p className="text-gray-700 dark:text-gray-300 font-medium mb-4">
-                      {experience.company}
-                    </p>
-                    <ul className="space-y-2 mb-4">
-                      {experience.description.map((item, i) => (
-                        <li key={i} className="flex text-gray-600 dark:text-gray-400">
-                          <span className="mr-2">•</span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    {experience.technologies && (
-                      <div className="flex flex-wrap gap-2 mt-4">
-                        {experience.technologies.map((tech, i) => (
-                          <Badge key={i} variant={i % 3 === 0 ? 'default' : i % 3 === 1 ? 'success' : 'secondary'}>
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    )}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-200 dark:hover:border-blue-800">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h3 className="font-bold text-lg text-gray-900 dark:text-gray-100">{exp.title}</h3>
+                    <span className="text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">{exp.period}</span>
+                  </div>
+                  <h4 className="font-medium text-gray-600 dark:text-gray-400 mb-4">{exp.company}</h4>
+                  
+                  <ul className="mb-4 space-y-2">
+                    {exp.description.map((desc, i) => (
+                      <li key={i} className="text-gray-600 dark:text-gray-300 text-sm flex items-start">
+                        <span className="text-blue-500 mr-2">•</span>
+                        <span>{desc}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {exp.technologies.map((tech, i) => (
+                      <Badge key={i} text={tech} />
+                    ))}
                   </div>
                 </div>
               </div>
