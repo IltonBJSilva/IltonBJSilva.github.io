@@ -1,16 +1,17 @@
 {
   "homepage": "https://iltonbjsilva.github.io/",
-  "name": "vite-react-typescript-starter",
+  "name": "iltonbjsilva-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
@@ -35,4 +36,3 @@
     "vite": "^5.4.2"
   }
 }
-
