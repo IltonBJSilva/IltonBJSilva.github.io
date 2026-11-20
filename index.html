@@ -1,14 +1,63 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Ilton Batista - Desenvolvedor Backend com experiência em Python, GCP, BigQuery, Automação e APIs escaláveis." />
-    <title>Ilton Batista | Desenvolvedor Backend</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ilton Batista | Engenheiro de Software</title>
+    <meta name="description" content="Engenheiro de Software e Tech Lead com foco em backend, sistemas distribuídos, cloud, DevOps, segurança e agentes de IA com LLMs." />
+    <meta name="author" content="Ilton Batista" />
+    <link rel="canonical" href="https://iltonbjsilva.github.io/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+
+    <!-- Open Graph / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iltonbjsilva.github.io/" />
+    <meta property="og:title" content="Ilton Batista | Engenheiro de Software" />
+    <meta property="og:description" content="Tech Lead e Engenheiro de Software: backend, sistemas distribuídos, cloud, DevOps, segurança e agentes de IA. Projetos, hackathons da NASA e currículo." />
+    <meta property="og:image" content="https://iltonbjsilva.github.io/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ilton Batista | Engenheiro de Software" />
+    <meta name="twitter:image" content="https://iltonbjsilva.github.io/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ilton Batista",
+        "jobTitle": "Software Engineer",
+        "url": "https://iltonbjsilva.github.io/",
+        "image": "https://iltonbjsilva.github.io/og-image.jpg",
+        "alumniOf": "Universidade Federal de Uberlândia (UFU)",
+        "sameAs": [
+          "https://github.com/IltonBJSilva",
+          "https://www.linkedin.com/in/iltonbsilva/"
+        ]
+      }
+    </script>
+
+    <!-- Aplica o tema antes da renderização para evitar o "flash" de tema errado -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var dark = saved ? saved === 'dark' : true;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
