@@ -1,18 +1,33 @@
-import React from 'react';
-import { DivideIcon as LucideIcon } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import type { ReactNode } from 'react';
 
 interface ButtonProps {
-  children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline';
-  size?: 'sm' | 'md' | 'lg';
+  children: ReactNode;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  size?: 'sm' | 'md';
   icon?: LucideIcon;
   href?: string;
   onClick?: () => void;
   className?: string;
-  download?: boolean;
+  /** `true` baixa com o nome original; uma string define o nome do arquivo. */
+  download?: boolean | string;
+  ariaLabel?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const variants = {
+  primary:
+    'bg-blue-600 text-white shadow-lg shadow-blue-600/25 hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-400 dark:shadow-blue-500/20',
+  secondary:
+    'border border-slate-300 bg-white text-slate-800 hover:border-slate-400 hover:bg-slate-50 dark:border-white/15 dark:bg-white/[0.03] dark:text-slate-100 dark:hover:border-white/30 dark:hover:bg-white/[0.06]',
+  ghost: 'text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-white/5 dark:hover:text-white',
+};
+
+const sizes = {
+  sm: 'h-9 gap-1.5 px-3 text-sm',
+  md: 'h-11 gap-2 px-5 text-sm sm:text-[15px]',
+};
+
+export default function Button({
   children,
   variant = 'primary',
   size = 'md',
@@ -21,49 +36,35 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = '',
   download,
-}) => {
-  const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50";
-  
-  const variantStyles = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800",
-    secondary: "bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700",
-    outline: "border border-gray-300 bg-transparent hover:bg-gray-100 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-800",
-  };
-  
-  const sizeStyles = {
-    sm: "text-sm h-8 px-3",
-    md: "text-base h-10 px-4",
-    lg: "text-lg h-12 px-6",
-  };
-  
-  const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
-  
+  ariaLabel,
+}: ButtonProps) {
+  const styles = `inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 active:scale-[0.98] ${variants[variant]} ${sizes[size]} ${className}`;
   const content = (
     <>
-      {Icon && <Icon className="mr-2 -ml-1" size={size === 'sm' ? 16 : size === 'md' ? 18 : 20} />}
+      {Icon && <Icon size={size === 'sm' ? 16 : 18} aria-hidden="true" />}
       {children}
     </>
   );
-  
+
   if (href) {
+    const external = href.startsWith('http') && !download;
     return (
-      <a 
-        href={href} 
-        className={styles} 
-        target={href.startsWith('http') && !download ? '_blank' : undefined} 
-        rel={href.startsWith('http') && !download ? 'noopener noreferrer' : undefined}
+      <a
+        href={href}
+        className={styles}
+        aria-label={ariaLabel}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
         download={download}
       >
         {content}
       </a>
     );
   }
-  
+
   return (
-    <button onClick={onClick} className={styles}>
+    <button type="button" onClick={onClick} className={styles} aria-label={ariaLabel}>
       {content}
     </button>
   );
-};
-
-export default Button;
+}

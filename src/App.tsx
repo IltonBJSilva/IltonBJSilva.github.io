@@ -1,49 +1,38 @@
-import React, { useEffect } from 'react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import HomeSection from './components/sections/HomeSection';
-import AboutSection from './components/sections/AboutSection';
-import ExperienceSection from './components/sections/ExperienceSection';
-import ProjectsSection from './components/sections/ProjectsSection';
-import ObjectivesSection from './components/sections/ObjectivesSection';
-import ExtraSection from './components/sections/ExtraSection';
-import { LanguageProvider } from './context/LanguageContext';
+import Hero from './components/sections/Hero';
+import FocusAreas from './components/sections/FocusAreas';
+import AiSection from './components/sections/AiSection';
+import Projects from './components/sections/Projects';
+import Competitions from './components/sections/Competitions';
+import Experience from './components/sections/Experience';
+import Skills from './components/sections/Skills';
+import About from './components/sections/About';
+import Contact from './components/sections/Contact';
+import { LanguageProvider } from './context/LanguageProvider';
 
-function App() {
-  useEffect(() => {
-    // Update document title
-    document.title = "Ilton Batista | Engenheiro de Software";
-    
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId) {
-          document.querySelector(targetId)?.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  }, []);
-
+export default function App() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-        <Header />
-        <main>
-          <HomeSection />
-          <AboutSection />
-          <ExperienceSection />
-          <ProjectsSection />
-          <ObjectivesSection />
-          <ExtraSection />
-        </main>
-        <Footer />
-      </div>
+      <a
+        href="#focus"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-white"
+      >
+        Pular para o conteúdo
+      </a>
+      <Header />
+      <main>
+        <Hero />
+        <FocusAreas />
+        <AiSection />
+        <Projects />
+        <Competitions />
+        <Experience />
+        <Skills />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
     </LanguageProvider>
   );
 }
-
-export default App;
