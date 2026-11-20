@@ -4,7 +4,7 @@ export const en: Translation = {
   meta: {
     title: 'Ilton Batista | Software Engineer',
     description:
-      'Software Engineer and Tech Lead focused on backend, distributed systems, cloud, DevOps, security and AI agents with LLMs.',
+      'Software Developer focused on backend, distributed systems, cloud, DevOps, security and AI agents with LLMs.',
   },
 
   nav: {
@@ -22,11 +22,11 @@ export const en: Translation = {
   },
 
   hero: {
-    eyebrow: 'Software Engineer · Tech Lead · Backend & AI',
+    eyebrow: 'Software Developer · Backend & AI',
     role: 'I build systems that stay correct when everything goes wrong.',
     tagline: 'Backend · Distributed systems · DevOps · Security · AI with LLMs',
     description:
-      '6+ years shipping APIs, integrations and automations to production, from Accenture to real clients. Today I lead a development team at ASCII (UFU) and work with AI agents every day: well-defined context, the right tools and a human in control.',
+      'I ship APIs, integrations and automations to production, from Accenture to real clients. I enjoy problems involving concurrency, data consistency and failure, and I use AI agents every day with well-defined context and a human in control.',
     ctaProjects: 'View projects',
     ctaCv: 'Download resume',
     available: 'Open to new opportunities',
@@ -34,7 +34,7 @@ export const en: Translation = {
   },
 
   stats: [
-    { value: '6+', label: 'years of professional experience' },
+    { value: '2x', label: 'NASA Space Apps participations' },
     { value: '60%+', label: 'efficiency gain on refactored queries' },
     { value: '~80%', label: 'of manual tasks automated' },
     { value: '130+', label: 'courses and certifications' },

@@ -4,7 +4,7 @@ export const es: Translation = {
   meta: {
     title: 'Ilton Batista | Ingeniero de Software',
     description:
-      'Ingeniero de Software y Tech Lead enfocado en backend, sistemas distribuidos, cloud, DevOps, seguridad y agentes de IA con LLMs.',
+      'Desarrollador de Software enfocado en backend, sistemas distribuidos, cloud, DevOps, seguridad y agentes de IA con LLMs.',
   },
 
   nav: {
@@ -22,11 +22,11 @@ export const es: Translation = {
   },
 
   hero: {
-    eyebrow: 'Ingeniero de Software · Tech Lead · Backend & IA',
+    eyebrow: 'Desarrollador de Software · Backend & IA',
     role: 'Construyo sistemas que siguen siendo correctos cuando todo sale mal.',
     tagline: 'Backend · Sistemas distribuidos · DevOps · Seguridad · IA con LLMs',
     description:
-      'Más de 6 años entregando APIs, integraciones y automatizaciones en producción, desde Accenture hasta clientes reales. Hoy lidero técnicamente un equipo en ASCII (UFU) y trabajo con agentes de IA a diario: contexto bien definido, las herramientas correctas y un humano en control.',
+      'Entrego APIs, integraciones y automatizaciones en producción, desde Accenture hasta clientes reales. Me gustan los problemas de concurrencia, consistencia de datos y fallos, y uso agentes de IA a diario con contexto bien definido y un humano en control.',
     ctaProjects: 'Ver proyectos',
     ctaCv: 'Descargar CV',
     available: 'Abierto a nuevas oportunidades',
@@ -34,7 +34,7 @@ export const es: Translation = {
   },
 
   stats: [
-    { value: '6+', label: 'años de experiencia profesional' },
+    { value: '2x', label: 'participaciones en NASA Space Apps' },
     { value: '60%+', label: 'de ganancia de eficiencia en consultas refactorizadas' },
     { value: '~80%', label: 'de tareas manuales automatizadas' },
     { value: '130+', label: 'cursos y certificaciones' },
